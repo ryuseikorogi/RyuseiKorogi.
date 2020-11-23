@@ -1,0 +1,55 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel= "stylesheet" href="style.css">
+<title>PF Ryusei Korogi</title>
+ <h1></h1>
+<p>Ryusei Korogi</p>
+</head>
+<body>
+<header>
+<div class="heading">
+<h2>about</h2>
+<p>興梠 硫世1997年生(23際)</p>
+<p>テックキャンプ 丸の内校 2020年卒</p>
+<p>ソフトバンクショップでの販売を経験後、学生ビザでフランス語を勉強しながらフランス・モンペリエの日本食レストランに就業。</p>
+<p>帰国後三井住友銀行にて営業プロジェクトリーダーを経験。</p>
+<p>前職の知人のアプリについて話を聞き感化されweb業界に興味を持ちTECH・CAMPで本格的にプログラミングの学習を始める。</p>
+<p>そして現在転職活動をしながら知人のサービスを作成し、Javascript・React.jsを勉強中</p>
+</div>
+</header>
+<div class="">
+<div class="first-view">
+<!-- 『トップ画像』を表示する -->
+</div>
+<div class="skills">
+        <!-- 『扱える言語』を表示する -->
+        <h1>skills</h1>
+        <p>"HTML/CSS/Javascript/Ruby/RubyonRails
+Git/AWS(S3)/Heroku"</p>
+      </div>
+      <div class="works">
+      <!-- 『作ったアプリ』を表示する -->
+      <h1>works</h1>
+      <html>
+<% @sites.each do |site| %>
+  <%= site.id %>
+  <%= site.memo %>
+  <%= site.site_name %>
+  <%= site.site_URL %>
+  <%= site.sit2e_Description %>
+<% end %>
+</html>
+      </div>
+      <div class="contacts">
+        <!-- 『コンタクトフォーム』を表示する -->
+        <h1>contacts</h1>
+        <p>お問い合わせフォーム<p>
+      </div>
+    </div>
+
+    <footer>
+    </footer>
+  </body>
+  </html>
