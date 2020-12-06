@@ -1,86 +1,86 @@
- <header>
- <div class="My-Name">
-<p>Ryusei Korogi</p>
-</div>
-<div class="navbar">
- <ul class="nav-lists">
-          <li><a href="#about">about</a></li>
-          <li><a href="#skills">skills</a></li>
-          <li><a href="#works">works</a></li>
-          <li><a href="#contacts">contacts</a></li>
-        </ul>
-      </div>
+<header id="body">
+  <div class="My-Name">
+    <p>Ryusei Korogi</p>
+  </div>
+  <div class="navbar">
+    <ul class="nav-lists">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#works">works</a></li>
+      <li><a href="#contacts">contacts</a></li>
+    </ul>
+  </div>
 </header>
 <div class="head-image">
 </div>
 <!-- 『トップ画像』を表示する -->
 <section id="about">
-
-<div class="common-container">
-</div>
-
-<div class="about">
-<h1>about</h1>
-<p>興梠 硫世1997年生(23歳)</p>
-<p>テックキャンプ 丸の内校 2020年卒</p>
-<p>ソフトバンクショップでの販売を経験後、学生ビザでフランス語を勉強しながらフランス・モンペリエの日本食レストランに就業。</p>
-<p>帰国後三井住友銀行にて営業プロジェクトリーダーを経験。</p>
-<p>前職の知人のアプリについて話を聞き感化されweb業界に興味を持ちTECH・CAMPで本格的にプログラミングの学習を始める。</p>
-<p>そして現在転職活動をしながら知人のサービスを作成し、Javascript・React.jsを勉強中</p>
-</div>
+  <div class="common-container">
+  </div>
+  <div class="about">
+    <h1>about</h1>
+    <p>興梠 硫世1997年生(23歳)</p>
+    <p>テックキャンプ 丸の内校 2020年卒</p>
+    <p>ソフトバンクショップでの販売を経験後、学生ビザでフランス語を勉強しながらフランス・モンペリエの日本食レストランに就業。</p>
+    <p>帰国後三井住友銀行にて営業プロジェクトリーダーを経験。</p>
+    <p>前職の知人のアプリについて話を聞き感化されweb業界に興味を持ちTECH・CAMPで本格的にプログラミングの学習を始める。</p>
+    <p>そして現在転職活動をしながら知人のサービスを作成し、Javascript・React.jsを勉強中</p>
+  </div>
+</section>
 <section id="skills">
-
-<div class="skills-container">
-</div>
-
-<div class="skills">
-        <!-- 『扱える言語』を表示する -->
-        <h1>skills</h1>
-        <p>"HTML/CSS/Javascript/Ruby/RubyonRails
-Git/AWS(S3)/Heroku"</p>
+  <div class="skills-container">
+  </div>
+  <div class="skills">
+    <!-- 『扱える言語』を表示する -->
+    <h1>skills</h1>
+    <p>"HTML/CSS/Javascript/Ruby/RubyonRails/Git/AWS(S3)/Heroku"</p>
+  </div>
+</section>
+<section id="works">
+  <div class="works-container">
+  </div>
+  <div class="works">
+    <!-- 『作ったアプリ』を表示する -->
+    <h1>works</h1>
+    <% @sites.each do |site| %>
+      <div>
+      <div class="my-image">
+      <img class="works-img" src=""/>
+        <%= site.id %>
+        <%= site.memo %>
+        <%= site.site_name %>
+        <%= site.site_URL %>
+        <%= site.site_Description %>
       </div>
-      <section id="works">
-
-<div class="works-container">
-</div>
-
-      <div class="works">
-      <!-- 『作ったアプリ』を表示する -->
-      <h1>works</h1>
-      <html>
-<% @sites.each do |site| %>
-  <%= site.id %>
-  <%= site.memo %>
-  <%= site.site_name %>
-  <%= site.site_URL %>
-  <%= site.site_Description %>
-<% end %>
-      </div>
-
-      <div class="contacts-container">
-</div>
-
-      <div class="contacts">
-        <!-- 『コンタクトフォーム』を表示する -->
-
-        <h1 class="sub-title">contacts</h1>
-    <h2 class="contacts-explain">お問い合わせフォーム<br>
-    (Googleフォームに移動します)<br>
-    </h2>
+    <% end %>
+  </div>
+  <div class="contacts-container">
+  </div>
+  <div class="contacts">
+    <!-- 『コンタクトフォーム』を表示する -->
+    <h1 class="sub-title">contacts</h1>
+    <h2 class="contacts-explain">お問い合わせフォーム<br>(Googleフォームに移動します)<br></h2>
     <a href= "https://docs.google.com/forms/d/e/1FAIpQLSftWGJQHe0vSqAquvNarnO0dL5zSApEyK3ETg3C9I-32aXzrA/viewform?usp=pp_url">
-    <i class="fas fa-paper-plane fa-4x"></i></a>
+      <i class="fas fa-paper-plane fa-4x"></i>
+    </a>
     <div class="back-container">
-
-       <p id="pageTop"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
-
-       <section id="contacts">
+      <p id="pageTop">
+        <a href="#body">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+      </p>
     </div>
   </div>
-      </div>
-    </div>
-    <footer>
+</section>
+<section id="contacts">
+  <footer>
     <i class="fa fa-android fa-large"></i>
     <i class="fa fa-android fa-4x"></i>
-    <a href="https://www.instagram.com/k.rogiee/"><i class="fab fa-instagram fa-3x iconcolor"></i>
-    <a href="https://github.com/ryuseikorogi"><i class="fab fa-github fa-3x iconcolor"></i>
-    </footer>
+    <a href="https://www.instagram.com/k.rogiee/">
+      <i class="fab fa-instagram fa-3x iconcolor"></i>
+    </a>
+    <a href="https://github.com/ryuseikorogi">
+      <i class="fab fa-github fa-3x iconcolor"></i>
+    </a>
+  </footer>
+</section>
