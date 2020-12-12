@@ -39,23 +39,35 @@
 <section id="works">
   <div class="works-container">
   </div>
+  <h1 class="plivate-works">works</h1>
   <div class="works">
     <!-- 『作ったアプリ』を表示する -->
-    <h1>works</h1>
-    <% @sites.each do |site| %>
-      <div>
-      <div class="my-image">
-      <img class="works-img" src=""/>
-        <%= site.id %>
-        <%= site.memo %>
-        <%= site.site_name %>
-        <%= site.site_URL %>
-        <%= site.site_Description %>
-      </div>
-    <% end %>
+    <div class="pfsite">
+    <%=image_tag "pfsite.png",class:"works-image"%>
+    <div class="works-discription"><br>
+     <p>portfolio site(2020/12)</p>
+     <p class="none1">私の制作実績 SNSの情報を公開しています。</p>
+     <p class="none2">随時アプリのデザインを変更しております。</p>
+     <p class="none3">開発言語:HTML/CSS/Javascript</p>
+     <p class="none4">フレームワーク:RubyonRails</p>
+    </div>
+    </div>
+  <div class="app-container">
+  </div>
+    <div class="furima">
+    <%=image_tag "furima-29802.png",class:"works-image"%>
+    <div class="works-discription"><br>
+    <p>Furima (2020/10)</p>
+     <p class="none1">テックキャンプ最終課題で作成し他フリマアプリです。</p>
+     <p class="none2">ログイン・出品・編集/削除・購入機能や、コメント機能が備わっています。</p>
+     <p class="none3">開発言語:HTML/CSS/Javascript/Ruby</p>
+     <p class="none4">フレームワーク:RubyonRails</p>
+    </div>
+    </div>
   </div>
   <div class="contacts-container">
   </div>
+  <section id="contacts">
   <div class="contacts">
     <!-- 『コンタクトフォーム』を表示する -->
     <h1 class="sub-title">contacts</h1>
@@ -72,15 +84,13 @@
     </div>
   </div>
 </section>
-<section id="contacts">
   <footer>
     <i class="fa fa-android fa-large"></i>
     <i class="fa fa-android fa-4x"></i>
-    <a href="https://www.instagram.com/k.rogiee/">
+    <a href="https://www.instagram.com/ryusei.q/">
       <i class="fab fa-instagram fa-3x iconcolor"></i>
     </a>
     <a href="https://github.com/ryuseikorogi">
       <i class="fab fa-github fa-3x iconcolor"></i>
     </a>
   </footer>
-</section>
