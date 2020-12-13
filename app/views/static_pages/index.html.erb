@@ -1,52 +1,102 @@
- <header>
- <h1></h1>
- <div class="My-Name">
-<p>Ryusei Korogi</p>
-</div>
-<div class="navbar">
- <ul class="nav-lists">
-          <li>about</li>
-          <li>skills</li>
-          <li>works</li>
-          <li>contacts</li>
-        </ul>
-      </div>
+<header id="body">
+  <div class="My-Name">
+    <p>Ryusei Korogi</p>
+  </div>
+  <div class="navbar">
+    <ul class="nav-lists">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#works">works</a></li>
+      <li><a href="#contacts">contacts</a></li>
+    </ul>
+  </div>
 </header>
 <div class="head-image">
 </div>
 <!-- 『トップ画像』を表示する -->
-<div class="about">
-<h1>about</h1>
-<p>興梠 硫世1997年生(23歳)</p>
-<p>テックキャンプ 丸の内校 2020年卒</p>
-<p>ソフトバンクショップでの販売を経験後、学生ビザでフランス語を勉強しながらフランス・モンペリエの日本食レストランに就業。</p>
-<p>帰国後三井住友銀行にて営業プロジェクトリーダーを経験。</p>
-<p>前職の知人のアプリについて話を聞き感化されweb業界に興味を持ちTECH・CAMPで本格的にプログラミングの学習を始める。</p>
-<p>そして現在転職活動をしながら知人のサービスを作成し、Javascript・React.jsを勉強中</p>
-</div>
-<div class="skills">
-        <!-- 『扱える言語』を表示する -->
-        <h1>skills</h1>
-        <p>"HTML/CSS/Javascript/Ruby/RubyonRails
-Git/AWS(S3)/Heroku"</p>
-      </div>
-      <div class="works">
-      <!-- 『作ったアプリ』を表示する -->
-      <h1>works</h1>
-      <html>
-<% @sites.each do |site| %>
-  <%= site.id %>
-  <%= site.memo %>
-  <%= site.site_name %>
-  <%= site.site_URL %>
-  <%= site.site_Description %>
-<% end %>
-      </div>
-      <div class="contacts">
-        <!-- 『コンタクトフォーム』を表示する -->
-        <h1>contacts</h1>
-        <p>お問い合わせフォーム<p>
-      </div>
+<section id="about">
+  <div class="common-container">
+  </div>
+  <div class="title-about">
+    <h1 class="about">about</h1>
+    <p>興梠 硫世1997年生(23歳)</p>
+    <p class="none10"></p>
+    <p>テックキャンプ 丸の内校 2020年卒</p>
+    <p>ソフトバンクショップでの販売を経験後、学生ビザでフランス語を勉強しながらフランス・モンペリエの日本食レストランに就業。</p>
+    <p>帰国後三井住友銀行にて営業プロジェクトリーダーを経験。</p>
+    <p>前職の知人のアプリについて話を聞き感化されweb業界に興味を持ちTECH・CAMPで本格的にプログラミングの学習を始める。</p>
+    <p>そして現在転職活動をしながら知人のサービスを作成し、Javascript・React.jsを勉強中</p>
+    <p class="none20"></p>
+    <p>関連リンク</p>
+    <a class="reference" href="https://www.wantedly.com/id/ryusei_korogi">Wantedly</a>
+    <a class="reference" href="https://github.com/ryuseikorogi">Github</a>
+  </div>
+</section>
+<section id="skills">
+  <div class="skills-container">
+  </div>
+  <div class="skills">
+    <!-- 『扱える言語』を表示する -->
+    <h1>skills</h1>
+    <p>"HTML/CSS/Javascript/Ruby/RubyonRails/Git/AWS(S3)/Heroku"</p>
+  </div>
+</section>
+<section id="works">
+  <div class="works-container">
+  </div>
+  <h1 class="plivate-works">works</h1>
+  <div class="works">
+    <!-- 『作ったアプリ』を表示する -->
+    <div class="pfsite">
+    <%=image_tag "pfsite.png",class:"works-image"%>
+    <div class="works-discription"><br>
+     <p>portfolio site(2020/12)</p>
+     <p class="none1">私の制作実績 SNSの情報を公開しています。</p>
+     <p class="none2">随時アプリのデザインを変更しております。</p>
+     <p class="none3">開発言語:HTML/CSS/Javascript</p>
+     <p class="none4">フレームワーク:RubyonRails</p>
     </div>
-    <footer>
-    </footer>
+    </div>
+  <div class="app-container">
+  </div>
+    <div class="furima">
+    <%=image_tag "furima-29802.png",class:"works-image"%>
+    <div class="works-discription"><br>
+    <p>Furima (2020/10)</p>
+     <a class="furima-29802"href="https://furima-29802.herokuapp.com/">https://furima-29802.herokuapp.com/</a>
+     <p class="none1">テックキャンプ最終課題で作成し他フリマアプリです。</p>
+     <p class="none2">ログイン・出品・編集/削除・購入機能や、コメント機能が備わっています。</p>
+     <p class="none3">開発言語:HTML/CSS/Javascript/Ruby</p>
+     <p class="none4">フレームワーク:RubyonRails</p>
+    </div>
+    </div>
+  </div>
+  <div class="contacts-container">
+  </div>
+  <section id="contacts">
+  <div class="contacts">
+    <!-- 『コンタクトフォーム』を表示する -->
+    <h1 class="sub-title">contacts</h1>
+    <h2 class="contacts-explain">お問い合わせフォーム<br>(Googleフォームに移動します)<br></h2>
+    <a href= "https://docs.google.com/forms/d/e/1FAIpQLSftWGJQHe0vSqAquvNarnO0dL5zSApEyK3ETg3C9I-32aXzrA/viewform?usp=pp_url">
+      <i class="fas fa-paper-plane fa-4x"></i>
+    </a>
+    <div class="back-container">
+      <p id="pageTop">
+        <a href="#body">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+  <footer>
+    <i class="fa fa-android fa-large"></i>
+    <i class="fa fa-android fa-4x"></i>
+    <a href="https://www.instagram.com/ryusei.q/">
+      <i class="fab fa-instagram fa-3x iconcolor"></i>
+    </a>
+    <a href="https://github.com/ryuseikorogi">
+      <i class="fab fa-github fa-3x iconcolor"></i>
+    </a>
+  </footer>
