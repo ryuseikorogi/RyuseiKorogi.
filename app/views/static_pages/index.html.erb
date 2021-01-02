@@ -14,12 +14,16 @@
 </header>
 <div class="head-image">
 </div>
+    <div class="triangle">
+    </div>
 <!-- 『トップ画像』を表示する -->
 <section id="about">
   <div class="common-container">
   </div>
-  <div class="title-about">
-    <h1 class="about">about</h1>
+  <div class="about">
+  <h1>about</h1>
+  </div>
+  <div class="about-discription">
     <p>興梠 硫世1997年生(23歳)</p>
     <p class="none10"></p>
     <p>テックキャンプ 丸の内校 2020年卒</p>
@@ -31,7 +35,7 @@
     <p>関連リンク</p>
     <a class="reference" href="https://www.wantedly.com/id/ryusei_korogi">Wantedly</a>
     <a class="reference" href="https://github.com/ryuseikorogi">Github</a>
-  </div>
+    </div>
 </section>
 <section id="skills">
   <div class="skills-container">
@@ -49,7 +53,9 @@
   <div class="works">
     <!-- 『作ったアプリ』を表示する -->
     <div class="pfsite">
+    <div class="image-wrapper">
     <%=image_tag "pfsite.png",class:"works-image"%>
+    </div>
     <div class="works-discription"><br>
      <p>portfolio site(2020/12)</p>
      <p class="none1">私の制作実績 SNSの情報を公開しています。</p>
@@ -61,8 +67,10 @@
   <div class="app-container">
   </div>
     <div class="furima">
+    <div class="image-wrapper">
     <%=image_tag "furima-29802.png",class:"works-image"%>
-    <div class="works-discription"><br>
+    </div>
+    <div class="works-discription">
     <p>Furima (2020/10)</p>
      <a class="furima-29802"href="https://furima-29802.herokuapp.com/">https://furima-29802.herokuapp.com/</a>
      <p class="none1">テックキャンプ最終課題で作成したフリマアプリです。</p>

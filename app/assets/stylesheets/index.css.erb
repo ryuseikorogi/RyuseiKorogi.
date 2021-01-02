@@ -28,6 +28,7 @@ header {
   background-size: cover;
 }
 .nav-lists {
+ padding: 0;
   margin-top:30px;
   display: flex;
   justify-content: space-around;
@@ -38,6 +39,7 @@ header {
 }
 li {
   list-style: none;
+  padding-left: 10px;
 }
 a {
   text-decoration:none;
@@ -62,12 +64,20 @@ margin: 40px 0px;
 .none20 {
 margin: 40px 0px;
 }
+.about-container {
+  width :100%;
+  height: 70px;
+}
 .about {
-  margin: 150px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+.about-discription {
+margin: 0 15%;
+  letter-spacing:normal;
 }
 .reference {
 color: black;
@@ -76,7 +86,7 @@ border-color :black;
 border-width :1px;
 }
 .title-about {
-padding:0px 160px;
+margin: 0px 30px 0px 160px;
 }
 .skills-container {
   width :100%;
@@ -88,36 +98,47 @@ padding:0px 160px;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  word-break: break-all;
 }
 .works-container {
   width :100px;
   height: 200px;
 }
-.works {
+ {
   height : auto;
-  padding-left: 180px;
+  margin: 0px 80px 0px 160px;
 }
+.pfsite {
+    display: flex;
+    .pfsite div
+width: 40%;
+    }
 .plivate-works {
 text-align: center;
 }
-.pfsite {
-}
-.furima {
+.image-wrapper{
+width: 48%;
+margin:0% 2%;
 }
 .works-image {
-padding:10px 30px 0px 30px;
-width:40%;
+width :100%;
 }
 .works-discription {
+width: 48%;
 text-align: light;
 display:inline-block;
-padding: 20px;
+word-break: break-all
+}
+.furima {
+display: flex;
 }
 .furima-29802 {
 color: black;
 border-bottom :solid;
 border-color :black;
 border-width :1px;
+display: flex;
+display: inline-block;
 }
 .none1 {
 margin: 20px 0px 0px 0px;
@@ -140,7 +161,6 @@ height :20px;
   height :300px;
 }
 .contacts {
-  height : x;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,7 +169,7 @@ height :20px;
 }
 .back-container{
 width : 100%;
-  height :200px
+height :200px
 }
 .fab.fa-instagram , .fab.fa-github, .fas.fa-paper-plane.fa-4x{
   z-index: 999;
@@ -195,10 +215,61 @@ footer{
 }
 /* タブレット表示時 */
 @media screen and (max-width: 1024px) {
-
+.works{
+ margin:;
+ }
 }
 
  /* スマホ表示時 */
 @media (max-width: 599px) {
-
+.My-Name{
+width: 30%;
+padding: 0px 0px 3px 15px;
+font-size: 140%;
+}
+.navbar {
+width :70%;
+}
+.head-image {
+width: 100%;
+}
+.triangle{
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid black;
+  margin: 20% auto 0;
+}
+.image-wrapper{
+width: 48%;
+margin:0% 2%;
+}
+.skills-container {
+  width :100%;
+  height: 255px;
+}
+.works-container {
+  width :100px;
+  height: 260px;
+}
+ .works-image{
+ width: 100%;
  }
+ .works-discription{
+ width: 48%;
+ }
+ .about {
+  }
+  .about-discription {
+margin-left :;
+}
+.contacts-container {
+width: 100%;
+height: 260px;
+}
+ .pfsite {
+    display: flex;
+    width: 100%;
+    }
+}
